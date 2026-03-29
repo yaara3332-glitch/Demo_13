@@ -51,14 +51,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="radioClicked"
-            android:text="Gray" />
+            android:text="RED" />
 
         <RadioButton
             android:id="@+id/rB3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="radioClicked"
-            android:text="Blue" />
+            android:text="BLUE" />
 
         <RadioButton
             android:id="@+id/rB4"

@@ -32,3 +32,29 @@ public class MainActivity extends AppCompatActivity {
         sw = findViewById(R.id.sw);
         rg = findViewById(R.id.rg);
     }
+    public void radioClicked(View view) {
+        if (sw.isChecked()) {
+            updateBackground();
+        }
+    }
+    public void clicked(View view) {
+        if (!sw.isChecked()) {
+            updateBackground();
+        }
+    }
+    public void switchClick(View view) {
+    }
+    public void updateBackground() {
+        int checkedId = rg.getCheckedRadioButtonId();
+
+        if (checkedId == R.id.rB1) {
+            myLayout.setBackgroundColor(Color.YELLOW);
+        } else if (checkedId == R.id.rB2) {
+            myLayout.setBackgroundColor(Color.RED);
+        } else if (checkedId == R.id.rB3) {
+            myLayout.setBackgroundColor(Color.BLUE);
+        } else if (checkedId == R.id.rB4) {
+            myLayout.setBackgroundColor(Color.GREEN);
+        }
+    }
+}
